@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(..\\img\\tyler-franta-iusJ25iYu1c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.footer-paragraph {
+    position: relative;
+    left: 39%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer img {
+    position: relative;
+    left: 39%;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: 2.8rem;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}

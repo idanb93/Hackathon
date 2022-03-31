@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(..\\img\\tyler-franta-iusJ25iYu1c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.post {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 10px 20px 10px;
+    text-decoration: none;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    height: 100%;
+    width: 15%;
+    float: left;
+
+    position: relative;
+    top: 20px;
+    left: 15%;
+
+    margin-right: 20px;
+
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    height: 100%;
+    width: 50%;
+    float: none;
+    
+    position: relative;
+    top: 20px;
+    left: 15%;
+}
+
+.welcome-paragraph {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+
+/* footer  */
+
+.footer-paragraph {
+    position: relative;
+    left: 39%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer img {
+    position: relative;
+    left: 39%;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: 2.8rem;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+/* //////////////////////////////////////// */
+
+.readmore-button{
+    border: none;
+    float: right;
+    background-color: whitesmoke;
+    color: blue;
+    text-shadow: 4px 1px 7px black;
+}
+
+.date {
+    color: red;
+    font-size: 12px;
+}
+
+.previous-button {
+    height: 5vh;
+    width: 30vw;
+    text-align: center;
+    color: blue;
+    position: relative;
+    left: 37%;
+    margin-top: 10px;
+}
+
+@media all and (max-width: 1200px){
+
+    body {
+        width: 100%;
+        background-image: url("..\\img\\tyler-franta-iusJ25iYu1c-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    .topics-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+    
+        height: 100%;
+        width: 15%;  
+
+        position: relative;
+        top: 20px;
+        left: 15%;
+    
+        margin-right: 20px; 
+    
+        background-color: whitesmoke;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+}
+
+@media all and (max-width: 480px){
+
+    body {
+        width: 100%;
+        background-image: url("..\\img\\tyler-franta-iusJ25iYu1c-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
