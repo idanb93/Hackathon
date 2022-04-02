@@ -15,6 +15,8 @@ let topics = {
 
 }
 
+
+
 let topicsContainer = document.querySelector('.topics-container');
 let mousedown = false;
 let topicsKeys = Object.keys(topics);
@@ -28,7 +30,12 @@ topicsKeys.forEach((key)=>{
     newDiv.style.textAlign = 'left';
     newDiv.style.display = 'flex';
     newDiv.style.flexDirection = 'row';
-    newDiv.style.justifyContent = 'space-between';    
+    newDiv.style.justifyContent = 'space-between';
+    
+    /// TODO make the whole div clickable - once done we can delete the newAnchor part
+    // newDiv.addEventListener('click', getArticlesBySubject);
+    // <div onclick="location.href='#';" style="cursor: pointer;">
+    // </div>
 
     let counterDiv = document.createElement('div');
     counterDiv.style.height = '23px';

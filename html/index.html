@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
@@ -24,16 +24,14 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">SignUp</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="index.html">Sign-In</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -44,131 +42,22 @@
         </div>
     </nav>
 
-    <article>
-
-        <aside class="topics-container">
-            <header>
-                <h4>Welcome to Tech-Blog</h4>
-            </header>
-            <p class="welcome-paragraph">where you can read interesting articles and reviews about
-                the latest technologies
-                that are used by most developers in the software development industry.</p>
-            <h4>Topics</h4>
-            <hr>
-        </aside>
-
-    </article>
-
-    <article class="articles-container">
-        <header>
-            <h4>Recent Posts</h4>
-        </header>
-
-        <div class="post">
-            <header>
-                <h4>Promises Part 1 <span class="date">25.3.2022</span><img src="..\img\calendar-solid.svg" alt="" width="25" height="20"></h4>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid
-                facilis omnis praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur
-                aut repellendus, nostrum hic iste.</p>
-            <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at
-                nobis error aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem
-                natus quaerat illo accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
-            <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse
-                molestias suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas,
-                eligendi temporibus earum debitis?</p>
-                <button class="readmore-button">Read More....</button>
+    <section class="login-container">
+        <div class="login-title">
+            <h2>Login</h2>
         </div>
-
-        <div class="post">
-            <header>
-                <h4>React Hooks <span class="date">20.2.2022</span><img src="..\img\calendar-solid.svg" alt="" width="25" height="20"></h4>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid
-                facilis omnis praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur
-                aut repellendus, nostrum hic iste.</p>
-            <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at
-                nobis error aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem
-                natus quaerat illo accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
-            <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse
-                molestias suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas,
-                eligendi temporibus earum debitis?</p>
-                <button class="readmore-button">Read More....</button>
+    
+        <div class="user-details">
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
         </div>
-
-        <div class="post">
-            <header>
-                <h4>CSS Flex-box <span class="date">10.2.2022</span><img src="..\img\calendar-solid.svg" alt="" width="25" height="20"></h4>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid
-                facilis omnis praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur
-                aut repellendus, nostrum hic iste.</p>
-            <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at
-                nobis error aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem
-                natus quaerat illo accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
-            <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse
-                molestias suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas,
-                eligendi temporibus earum debitis?</p>
-                <button class="readmore-button">Read More....</button>
-        </div>
-
-        <div class="post">
-            <header>
-                <h4>CSS Specificity <span class="date">7.2.2022</span><img src="..\img\calendar-solid.svg" alt="" width="25" height="20"></h4>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid
-                facilis omnis praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur
-                aut repellendus, nostrum hic iste.</p>
-            <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at
-                nobis error aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem
-                natus quaerat illo accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
-            <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse
-                molestias suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas,
-                eligendi temporibus earum debitis?</p>
-                <button class="readmore-button">Read More....</button>
-        </div>
-
-        <div class="post">
-            <header>
-                <h4>CSS Specificity <span class="date">7.2.2022</span><img src="..\img\calendar-solid.svg" alt="" width="25" height="20"></h4>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid
-                facilis omnis praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur
-                aut repellendus, nostrum hic iste.</p>
-            <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at
-                nobis error aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem
-                natus quaerat illo accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
-            <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse
-                molestias suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas,
-                eligendi temporibus earum debitis?</p>
-                <button class="readmore-button">Read More....</button>
-        </div>
-
-        <div class="post">
-            <header>
-                <h4>CSS Specificity <span class="date">7.2.2022</span><img src="..\img\calendar-solid.svg" alt="" width="25" height="20"></h4>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid
-                facilis omnis praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur
-                aut repellendus, nostrum hic iste.</p>
-            <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at
-                nobis error aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem
-                natus quaerat illo accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
-            <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse
-                molestias suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas,
-                eligendi temporibus earum debitis?</p>
-                <button class="readmore-button">Read More....</button>
-        </div>
-
-    </article>
-
-    <button class="previous-button">Previous Posts</button>
-
-    <footer>
-        <img src="..\img\kindpng_789802.png" alt="" width="30" height="24">
-        <p class="footer-paragraph">© 2022 Copyright Tech-Blog.co.il All Rights Reserved.</p>
-    </footer>
-    <script type="text/javascript" src="..\js\index.js"></script>
+    </section>
 </body>
 
 </html>
