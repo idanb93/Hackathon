@@ -26,6 +26,7 @@ function registrationSuccessful(event) {
 function authenticate(event){
 
     event.preventDefault();
+    let successfullySignIn = false;
     
     let username = document.querySelector('.username-input').value;
     let password = document.querySelector('.password-input').value;
@@ -36,15 +37,18 @@ function authenticate(event){
 
         let usernameFromLocalStorage = localStorage.getItem(`username${i}`);
         let passwordFromLocalStorage = localStorage.getItem(`password${i}`);
-
-        alert(usernameFromLocalStorage);
-        alert(passwordFromLocalStorage);
     
         if (usernameFromLocalStorage === username && passwordFromLocalStorage === password){
+            successfullySignIn = true;
             window.location.href="..\\html\\main-page.html";
         }
     }
 
-    alert('No such username or password');
+    document.querySelector('.username-input').value = '';
+    document.querySelector('.password-input').value = '';
+
+    if (!successfullySignIn){
+        alert('No such username or password');
+    }
 
 }
