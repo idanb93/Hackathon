@@ -1,66 +1,84 @@
 
-let topics = {
+// class Database {
+//     constructor() {
+//         this.userDetails = {};
+//     }
+// }
 
-    'React.js': 9,
-    'React-Hooks' : 2,
-    'Vue.js': 6,
-    'Node.js': 5,
-    'Python': 11,
-    'CSS Specificity': 2,
-    'CSS Flex-box': 3,
-    'Promise': 2,
-    'Docker': 3,
-    'Git': 1,
-    'Webpack': 2,
+// let database = new Database();
+
+// let usersDetails = {};
+
+let numOfUsers = 1;
+
+function registrationSuccessful(event) {
+
+    event.preventDefault();
+
+    console.log(numOfUsers);
+
+    alert('You have successfully registered');
+
+    let username = document.querySelector('.username-input').value;
+    let password = document.querySelector('.password-input').value;
+
+    localStorage.setItem(`username${numOfUsers}`, username);
+    localStorage.setItem(`password${numOfUsers}`, password);
+    localStorage.setItem(`numOfUsers`, numOfUsers);
+    numOfUsers++;
+    
+    document.querySelector('.email-input').value = '';
+    document.querySelector('.confirm-email-input').value = '';
+    document.querySelector('.username-input').value = '';
+    document.querySelector('.password-input').value = '';
+
+    // database.userDetails[username] = password;
+    // console.log(database.userDetails);
+
+    // window.location.href="..\\html\\index.html";
 
 }
+function authenticate(event){
 
-let topicsContainer = document.querySelector('.topics-container');
-let mousedown = false;
-let topicsKeys = Object.keys(topics);
+    console.log(numOfUsers);
 
-// populate topics container
-
-topicsKeys.forEach((key)=>{
-
-    let newDiv = document.createElement('div');
-    newDiv.style.padding = '15px 15px 15px 15px';
-    newDiv.style.textAlign = 'left';
-    newDiv.style.display = 'flex';
-    newDiv.style.flexDirection = 'row';
-    newDiv.style.justifyContent = 'space-between';    
-
-    let counterDiv = document.createElement('div');
-    counterDiv.style.height = '23px';
-    counterDiv.style.width = '23px';
-    counterDiv.style.borderRadius = '20px';
-    counterDiv.style.backgroundColor = 'black';
-    counterDiv.style.color = 'white';
-    counterDiv.style.textAlign = 'center';
-    counterDiv.textContent = topics[key];
-
-    let newAnchor = document.createElement('a');
-    newAnchor.href = '#';
-    newAnchor.style.textDecoration = 'none';
-    newAnchor.style.color = 'black';
-    newAnchor.style.fontSize = '18px';
-    newAnchor.style.textAlign = 'center';
-    newAnchor.textContent = key;
+    event.preventDefault();
     
+    let username = document.querySelector('.username-input').value;
+    let password = document.querySelector('.password-input').value;
 
-    newDiv.addEventListener('mouseover', function(){
-        newDiv.style.backgroundColor = 'lightgrey';
-    })
+    let numOfUsers = localStorage.getItem(`numOfUsers`);
 
-    newDiv.addEventListener('mouseout', function(){
-        newDiv.style.backgroundColor = 'whitesmoke';
-    })
+    for (let i = 1; i <= numOfUsers; i++){
 
-    newDiv.appendChild(newAnchor);
-    newDiv.appendChild(counterDiv);
+        let usernameFromLocalStorage = localStorage.getItem(`username${i}`);
+        let passwordFromLocalStorage = localStorage.getItem(`password${i}`);
 
-    topicsContainer.appendChild(newDiv);
-});
+        alert(usernameFromLocalStorage);
+        alert(passwordFromLocalStorage);
+    
+        if (usernameFromLocalStorage === username && passwordFromLocalStorage === password){
+            window.location.href="..\\html\\main-page.html";
+        } else {
+            alert('You entered incorrect username or password');
+        }
+    }
 
-// populate articles container
+    // console.log(database.userDetails);
 
+    // let usersDetailsKeys = Object.keys(usersDetails);
+
+    // usersDetailsKeys.forEach( (key)=>{
+
+    //     console.log(key);
+
+    //     if ( (key === username) && (usersDetails[key] === password) ){
+    //         window.open('..\\html\\main-page.html');
+    //     } else {
+    //         alert('You entered incorrect username or password');
+    //     }
+    // });
+
+    // alert('No such username or password');
+
+}

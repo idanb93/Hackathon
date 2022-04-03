@@ -74,7 +74,11 @@ body {
 
 .readmore-button{
     border: none;
-    float: right;
+
+    position: relative;
+    left: 80%;
+    top: 10%;
+    
     background-color: whitesmoke;
     color: blue;
     text-shadow: 4px 1px 7px black;
